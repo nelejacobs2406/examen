@@ -1,0 +1,342 @@
+/* Muziekschool H&J - Stijl */
+
+/* Algemene instellingen */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    color: #333;
+    background-color: #f0f0f0;
+}
+
+/* HEADER */
+header {
+    background-color: #e87722;
+    color: white;
+    text-align: center;
+    padding: 50px;
+}
+
+header h1 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+header p {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+header p em {
+    font-style: italic;
+    font-weight: bold;
+}
+
+/* NAVIGATIE */
+nav {
+    background-color: #b35a00;
+    padding: 0;
+    border-bottom: 2px solid yellow;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    font-size: 14px;
+}
+
+nav ul li a:hover,
+nav ul li a.actief {
+    background-color: #e87722;
+}
+
+/* PAGINAOPMAAK (2 kolommen) */
+.pagina-wrapper {
+    display: flex;
+    flex-direction: row;
+    min-height: calc(100vh - 160px);
+}
+
+/* Linkerzijbalk */
+.zijbalk {
+    width: 340px;
+    min-width: 340px;
+    background-color: #f5a05a;
+    padding: 20px;
+}
+
+.zijbalk h2 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.zijbalk p {
+    font-size: 13px;
+    color: #161616;
+    margin-bottom: 15px;
+}
+
+.zijbalk img {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+/* Hoofdinhoud */
+.inhoud {
+    flex: 1;
+    padding: 25px 30px;
+    background-color: white;
+}
+
+.inhoud h2 {
+    font-size: 22px;
+    color: #e87722;
+    margin-bottom: 8px;
+}
+
+.inhoud h3 {
+    font-size: 16px;
+    color: #e87722;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.inhoud p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.inhoud strong {
+    font-weight: bold;
+}
+
+.inhoud img {
+    max-width: 300px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+/* Scheidingslijn boven secties */
+.sectie {
+    padding-top: 15px;
+    margin-top: 20px;
+}
+
+/* OVER ONS */
+.persoon {
+    margin-bottom: 30px;
+}
+
+.persoon h2 {
+    font-size: 22px;
+    color: #e87722;
+    margin-bottom: 2px;
+}
+
+.persoon .functie {
+    font-style: normal;
+    font-size: 13px;
+    color: #555;
+    margin-bottom: 12px;
+}
+
+.persoon-layout {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.persoon-layout img {
+    max-width: 250px;
+    height: auto;
+    align-self: flex-start;
+}
+
+.persoon-layout .tekst {
+    flex: 1;
+}
+
+.persoon-layout .tekst h3 {
+    font-size: 15px;
+    color: #333;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+/*TARIEVEN pagina*/
+.tarieven-zijbalk {
+    background-color: #f5a05a;
+    padding: 20px;
+}
+
+.tarieven-zijbalk h2 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.tarieven-zijbalk p {
+    font-size: 13px;
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+.voorwaarden h2 {
+    font-size: 22px;
+    color: #e87722;
+    margin-bottom: 5px;
+}
+
+.voorwaarden .subtitel {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.artikel {
+    padding: 10px 0;
+}
+
+.artikel h3 {
+    font-size: 14px;
+    color: #333;
+    text-transform: none;
+    margin-bottom: 5px;
+}
+
+.artikel p {
+    margin-bottom: 0;
+}
+
+/* CONTACT pagina*/
+.adres-blok {
+    margin-bottom: 20px;
+}
+
+.adres-blok h2 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.adres-blok p {
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.contact-formulier h2 {
+    font-size: 20px;
+    color: #e87722;
+    margin-bottom: 8px;
+}
+
+.contact-formulier p {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.formulier-groep {
+    margin-bottom: 12px;
+}
+
+.formulier-groep label {
+    display: block;
+    font-size: 13px;
+    margin-bottom: 4px;
+    color: #333;
+}
+
+.formulier-groep input,
+.formulier-groep select,
+.formulier-groep textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    font-size: 13px;
+    color: #333;
+}
+
+.formulier-groep textarea {
+    height: 200px;
+    resize: vertical;
+}
+
+.knop-verzend {
+    background-color: #e87722;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.knop-verzend:hover {
+    background-color: #b35a00;
+}
+
+/* ===========================
+   FOOTER
+   =========================== */
+footer {
+    background-color: #b35a00;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+/* ===========================
+   MEDIAQUERY - MOBIEL
+   (schermen smaller dan 600px)
+   =========================== */
+@media screen and (max-width: 600px) {
+
+    header h1 {
+        font-size: 20px;
+    }
+
+    /* Navigatie verticaal */
+    nav ul {
+        flex-direction: column;
+    }
+
+    /* Pagina onder elkaar */
+    .pagina-wrapper {
+        flex-direction: column;
+    }
+
+    .zijbalk {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .inhoud {
+        padding: 15px;
+    }
+
+    /* Over ons: foto naast tekst omzetten naar boven/onder */
+    .persoon-layout {
+        flex-direction: column;
+    }
+
+    .persoon-layout img {
+        max-width: 100%;
+    }
+
+}
