@@ -289,22 +289,18 @@ nav ul li a.actief {
     background-color: #b35a00;
 }
 
-/* ===========================
-   FOOTER
-   =========================== */
+/* FOOTER */
 footer {
     background-color: #b35a00;
-    color: white;
+    color: black;
     text-align: center;
     padding: 12px;
     font-size: 12px;
     line-height: 1.6;
 }
 
-/* ===========================
-   MEDIAQUERY - MOBIEL
-   (schermen smaller dan 600px)
-   =========================== */
+/* MEDIAQUERY - MOBIEL
+   (schermen smaller dan 600px) */
 @media screen and (max-width: 600px) {
 
     header h1 {
